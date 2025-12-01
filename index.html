@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>minha prmeira experiencia com realidade ampliada, é massa ó</title>
+     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <!-- primeira coisa é trazer o AR.js e o A-frame pro head, copiei do site de AR.js -->
+  </head>
+  <body style="margin: 0 px; overflow: hidden">
+  <!-- configuração para o site não ter barra d rolagem e nem moldura -->
+    
+    <a-scene vr-mode-ui="enabled: false" embedded arjs:="debugUIEnabled: false">
+    <!-- desliguei o botão VR e o debug -->
+      <a-marker present="hiro">
+        <a-box material="color:pink;" position="0 0.5 0"></a-box>
+      </a-marker>
+      <a-entity camera></a-entity>
+      
+    </a-scene>
+    
+  </body>
+</html>
